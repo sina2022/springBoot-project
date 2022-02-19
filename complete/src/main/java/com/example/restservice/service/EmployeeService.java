@@ -8,7 +8,8 @@ public class EmployeeService {
 
    static List<Employee> employees= new ArrayList<>();
 
-    public static List<Employee> getAllEmployees(){
+    public List<Employee> getAllEmployees(){
+
        Employee employee1=new Employee("john",
                "luck", 1,
                new Address(123,"saint catherin",new City("montreal","QC"))
@@ -22,7 +23,7 @@ public class EmployeeService {
                 new Address(567,"saint catherin",new City("montreal","QC"))
         ) ;
         Employee employee4=new Employee("masoud",
-                "bozorgi", 1,
+                "bozorgi", 4,
                 new Address(891,"ridge wood",new City("montreal","QC"))
         ) ;
 
@@ -35,7 +36,7 @@ public class EmployeeService {
         return employees;
     }
 
-    public static Employee getEmployeeById(int Id){
+    public Employee getEmployeeById(int Id){
         for(Employee E : employees){
             if (E.getId() == Id){
                 return E;
@@ -43,7 +44,7 @@ public class EmployeeService {
         }
         return null;
     }
-    public Employee getByName(String name){
+    public  Employee getByName(String name){
         for(Employee E : employees){
             if (Objects.equals(E.getFirstName(), name)){
                 return E;
@@ -51,7 +52,7 @@ public class EmployeeService {
         }
         return null;
     }
-    public Employee getByStreet(String street){
+    public  Employee getByStreet(String street){
         for(Employee E : employees){
             if (Objects.equals(E.getAddress().getStreetName(), street)){
                 return E;
@@ -61,7 +62,7 @@ public class EmployeeService {
     }
 
 
-    public static void addEmployee(Employee employee){
+    public  void addEmployee(Employee employee){
         employees.add(employee);
     }
 }
