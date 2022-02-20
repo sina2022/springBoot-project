@@ -47,9 +47,31 @@ public class EmployeeController {
     public ResponseEntity<Employee>  saveEmployee(@RequestBody Employee employee) {
         try {employeeService.addEmployee(employee);
             return new ResponseEntity(employee, HttpStatus.CREATED);
-        } catch (EmployeeExistExeption employeeExistExeption) {
+        } catch (EmployeeExistException employeeExistException) {
 
-            return new ResponseEntity(employeeExistExeption.getMessage(),HttpStatus.ALREADY_REPORTED);
+            return new ResponseEntity(employeeExistException.getMessage(),HttpStatus.ALREADY_REPORTED);
+        }
+    }
+
+  @PutMapping("/Employee/{id}")
+    public ResponseEntity<Employee> updateEmployee(@PathVariable int id,@RequestBody Employee employee){
+        try {
+            employeeService.updateEmployee(id,employee);
+            return new ResponseEntity<>(employee, HttpStatus.ACCEPTED);
+        }
+        catch (EmployeeNotFoundException employeeNotFoundException){
+            return  new ResponseEntity(employeeNotFoundException.getMessage(),HttpStatus.BAD_REQUEST);
+        }
+  }
+
+    @DeleteMapping("/Employee/{id}")
+    public ResponseEntity deleteEmployee(@PathVariable int id){
+        try{
+            employeeService.deleteEmployee(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        catch (EmployeeNotFoundException exception){
+            return new ResponseEntity(exception.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
 }

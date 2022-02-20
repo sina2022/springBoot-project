@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06cc9913-5ca0-4392-a7a9-80c6cc8bc4ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/exception/EmployeeExistExeption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/exception/EmployeeNotFoundException.java" afterDir="false" />
+    <list default="true" id="06cc9913-5ca0-4392-a7a9-80c6cc8bc4ad" name="Changes" comment="add exceptions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/api/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/api/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/exception/EmployeeExistExeption.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/exception/EmployeeExistException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/service/EmployeeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,19 +72,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.RestServiceApplication">
-    <configuration name="generated-requests#10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="10" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="generated-requests#11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="11" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests#13" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="13" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="generated-requests#14" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="14" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="generated-requests#15" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="15" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests#9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" runType="Run single request">
+    <configuration name="generated-requests#16" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="16" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="RestServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -104,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests#16" />
+        <item itemvalue="HTTP Request.generated-requests#14" />
         <item itemvalue="HTTP Request.generated-requests#15" />
         <item itemvalue="HTTP Request.generated-requests#13" />
         <item itemvalue="HTTP Request.generated-requests#11" />
-        <item itemvalue="HTTP Request.generated-requests#10" />
-        <item itemvalue="HTTP Request.generated-requests#9" />
       </list>
     </recent_temporary>
   </component>
@@ -125,6 +124,14 @@
       <workItem from="1645208153016" duration="2645000" />
       <workItem from="1645231214517" duration="3029000" />
     </task>
+    <task id="LOCAL-00001" summary="add exceptions">
+      <created>1645379140684</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645379140684</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,5 +163,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add exceptions" />
   </component>
 </project>

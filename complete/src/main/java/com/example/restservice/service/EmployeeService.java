@@ -69,7 +69,23 @@ public class EmployeeService {
         if (e == null) {
             employees.add(employee);
         }
-      else  throw new EmployeeExistExeption("this employee exist in database");
+      else  throw new EmployeeExistException("this employee exist in database");
+    }
+
+    public void updateEmployee(int id, Employee employee){
+        Employee fetchedEmployee =this.findById(id);
+        if (fetchedEmployee!=null) {
+        fetchedEmployee=employee;
+        }
+       else throw  new EmployeeNotFoundException("employee not found");
+    }
+
+    public void deleteEmployee(int id){
+        Employee fetchedEmployee = this.findById(id);
+        if(fetchedEmployee != null){
+            //delete pet !!!! => will teach database next week!!!
+        }
+        else throw  new EmployeeNotFoundException("employee not found");
     }
 
     private Employee findById(int id){
