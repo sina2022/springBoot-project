@@ -5,51 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06cc9913-5ca0-4392-a7a9-80c6cc8bc4ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/exception/EmployeeExistExeption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/exception/EmployeeNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/CONTRIBUTING.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/Jenkinsfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/LICENSE.writing.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/README.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/manifest.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/src/main/java/com/example/restservice/RestServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/src/main/java/com/example/restservice/api/EmployeeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/src/main/java/com/example/restservice/model/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/src/main/java/com/example/restservice/model/City.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/src/main/java/com/example/restservice/model/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/src/main/java/com/example/restservice/model/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/src/main/java/com/example/restservice/service/EmployeeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/complete/src/test/java/com/example/restservice/GreetingControllerTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/src/main/java/com/example/restservice/RestServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/initial/src/test/java/com/example/restservice/RestServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-rest-service-main/test/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/api/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/api/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/complete/src/main/java/com/example/restservice/service/EmployeeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,15 +24,26 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="25FjfQ3NSx0vCK4n1OIpkUP9w8R" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -102,47 +73,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.RestServiceApplication">
-    <configuration name="generated-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" runType="Run single request">
+    <configuration name="generated-requests#10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="10" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
+    <configuration name="generated-requests#11" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="11" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" runType="Run single request">
+    <configuration name="generated-requests#13" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="13" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" runType="Run single request">
+    <configuration name="generated-requests#15" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="15" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="rest-service" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="rest-service" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests#9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="RestServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="com.example.rest-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.restservice.RestServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestServiceApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="rest-service.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.restservice.restservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.restservice.restservice.RestServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests#5" />
-        <item itemvalue="HTTP Request.generated-requests#4" />
-        <item itemvalue="HTTP Request.generated-requests#2" />
-        <item itemvalue="HTTP Request.generated-requests#1" />
-        <item itemvalue="Spring Boot.RestServiceApplication (2)" />
+        <item itemvalue="HTTP Request.generated-requests#15" />
+        <item itemvalue="HTTP Request.generated-requests#13" />
+        <item itemvalue="HTTP Request.generated-requests#11" />
+        <item itemvalue="HTTP Request.generated-requests#10" />
+        <item itemvalue="HTTP Request.generated-requests#9" />
       </list>
     </recent_temporary>
   </component>
@@ -205,5 +153,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

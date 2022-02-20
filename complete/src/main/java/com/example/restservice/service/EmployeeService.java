@@ -1,5 +1,6 @@
 package com.example.restservice.service;
 
+import com.example.restservice.exception.*;
 import com.example.restservice.model.*;
 
 import java.util.*;
@@ -37,13 +38,14 @@ public class EmployeeService {
     }
 
     public Employee getEmployeeById(int Id){
-        for(Employee E : employees){
-            if (E.getId() == Id){
-                return E;
-            }
+        Employee employee=findById(Id);
+        if(employee != null) {
+            return employee;
         }
-        return null;
+        else
+        throw new EmployeeNotFoundException("this employee dose not exist");
     }
+
     public  Employee getByName(String name){
         for(Employee E : employees){
             if (Objects.equals(E.getFirstName(), name)){
@@ -62,8 +64,20 @@ public class EmployeeService {
     }
 
 
-    public  void addEmployee(Employee employee){
-        employees.add(employee);
+    public  void addEmployee(Employee employee) {
+        Employee e = findById(employee.getId());
+        if (e == null) {
+            employees.add(employee);
+        }
+      else  throw new EmployeeExistExeption("this employee exist in database");
+    }
+
+    private Employee findById(int id){
+        for(Employee E : employees){
+            if (E.getId() == id){
+                return E;
+            }
+        }
+        return null;
     }
 }
-

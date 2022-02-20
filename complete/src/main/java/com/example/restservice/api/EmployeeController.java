@@ -1,7 +1,9 @@
 package com.example.restservice.api;
 
+import com.example.restservice.exception.*;
 import com.example.restservice.model.*;
 import com.example.restservice.service.*;
+import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -9,6 +11,8 @@ import java.util.*;
 @RestController
 public class EmployeeController {
     EmployeeService employeeService = new EmployeeService();
+
+
     //GET
     @GetMapping("/Employee")
     public List<Employee> getAllEmployees(){
@@ -18,8 +22,14 @@ public class EmployeeController {
     //I want to use the same route => (/pet) but I want to send an id to filter the data
     //PathVariable
     @GetMapping("/Employee/{Id}")
-    public Employee getById(@PathVariable int Id){
-        return employeeService.getEmployeeById(Id);
+    public ResponseEntity<Employee> getById(@PathVariable int Id){
+
+        try{
+            return new ResponseEntity<>(employeeService.getEmployeeById(Id),HttpStatus.ACCEPTED);
+        }
+        catch (EmployeeNotFoundException employeeNotFoundException){
+            return  new ResponseEntity(employeeNotFoundException.getMessage(),HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping("/Employ/{name}")
@@ -34,8 +44,12 @@ public class EmployeeController {
 
     //POST
     @PostMapping("/Employee")
-    public Employee saveEmployee(@RequestBody Employee employee){
-        employeeService.addEmployee(employee);
-        return employee;
+    public ResponseEntity<Employee>  saveEmployee(@RequestBody Employee employee) {
+        try {employeeService.addEmployee(employee);
+            return new ResponseEntity(employee, HttpStatus.CREATED);
+        } catch (EmployeeExistExeption employeeExistExeption) {
+
+            return new ResponseEntity(employeeExistExeption.getMessage(),HttpStatus.ALREADY_REPORTED);
+        }
     }
 }
